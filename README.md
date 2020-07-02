@@ -1,4 +1,4 @@
-# ServerStatus中文版：   
+# ServerStatus中文版-Fork私人定制版：   
 
 * ServerStatus中文版是一个酷炫高逼格的云探针、云监控、服务器云监控、多服务器探针~。
 * 在线演示：https://tz.cloudcpp.com    
