@@ -130,7 +130,7 @@ function uptime() {
 				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>IPv6</small>";
 			} else {
 				TableRow.children["online4"].children[0].children[0].className = "progress-bar progress-bar-danger";
-				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>关闭</small>";
+				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>离线</small>";
 			}
 
 			// Online6
@@ -139,17 +139,17 @@ function uptime() {
 			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>开启</small>";
 			//} else {
 			//	TableRow.children["online6"].children[0].children[0].className = "progress-bar progress-bar-danger";
-			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>关闭</small>";
+			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>离线</small>";
 			//}
 
 			// Ipstatus
 			// mh361 or mh370, mourn mh370, 2014-03-08 01:20　lost from all over the world.
 			if (result.servers[i].ip_status) {
 				TableRow.children["ip_status"].children[0].children[0].className = "progress-bar progress-bar-success";
-				TableRow.children["ip_status"].children[0].children[0].innerHTML = "<small>MH361</small>";
+				TableRow.children["ip_status"].children[0].children[0].innerHTML = "<small>已连接</small>";
 			} else {
 				TableRow.children["ip_status"].children[0].children[0].className = "progress-bar progress-bar-danger";
-				TableRow.children["ip_status"].children[0].children[0].innerHTML = "<small>MH370</small>";
+				TableRow.children["ip_status"].children[0].children[0].innerHTML = "<small>失联</small>";
 			}
 
 			// Name
@@ -168,16 +168,16 @@ function uptime() {
 					TableRow.children["traffic"].innerHTML = "–";
 					TableRow.children["cpu"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["cpu"].children[0].children[0].style.width = "100%";
-					TableRow.children["cpu"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["cpu"].children[0].children[0].innerHTML = "<small>离线</small>";
 					TableRow.children["memory"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["memory"].children[0].children[0].style.width = "100%";
-					TableRow.children["memory"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["memory"].children[0].children[0].innerHTML = "<small>离线</small>";
 					TableRow.children["hdd"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["hdd"].children[0].children[0].style.width = "100%";
-					TableRow.children["hdd"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["hdd"].children[0].children[0].innerHTML = "<small>离线</small>";
 					TableRow.children["ping"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["ping"].children[0].children[0].style.width = "100%";
-					TableRow.children["ping"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["ping"].children[0].children[0].innerHTML = "<small>离线</small>";
 					if(ExpandRow.hasClass("in")) {
 						ExpandRow.collapse("hide");
 					}
